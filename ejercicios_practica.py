@@ -25,8 +25,8 @@ def ej1():
     # Realizar una funcion lambda que eleve al cuadrado
     # el número pasado como parámetro
 
-    # potencia_2 = lambda x:......
-    # pot_3 = potencia_2(3)
+    potencia_2 = lambda x: x**2
+    pot_3 = potencia_2(3)
 
     # 2)
     # Utilice la función map para mapear una lambda expression
@@ -42,7 +42,8 @@ def ej1():
     # Lista de numeros
     numeros = [1, -5, 4, 3]
 
-    # numeros_potencia = list(map....)
+    numeros_potencia = list(map(lambda x: x**2,numeros))
+    print(numeros_potencia)
 
 
 def ej2():
@@ -51,7 +52,7 @@ def ej2():
     # Realizar una funcion lambda que retorne el tamaño
     # (len) de un string pasado como parámetro
 
-    # len_string = lambda......
+    len_string = lambda x: len(x)
 
     # 2)
     # Lista de string
@@ -67,7 +68,8 @@ def ej2():
     # NOTA: No debe usar "len_string" dentro del map, debe colocar
     # directamente la lambda.
 
-    # palabras_len = list(map....)
+    palabras_len = list(map(lambda x: len(x),palabras))
+    print(palabras_len)
 
 
 def ej3():
@@ -190,7 +192,7 @@ def ej6():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     ej1()
-    # ej2()
+    ej2()
     # ej3()
     # ej4()
     # ej5()
